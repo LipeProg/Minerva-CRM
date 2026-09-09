@@ -1,21 +1,25 @@
 # Minerva CRM
 
-Minerva CRM é um sistema web de CRM para pequenos negócios acompanharem clientes, leads, oportunidades, tarefas de follow-up e histórico de interações comerciais.
+Minerva CRM é uma aplicação web acadêmica e de portfólio criada para simular a gestão comercial de pequenos negócios. O sistema centraliza clientes, leads, oportunidades, tarefas de follow-up e histórico de interações em uma interface única.
 
-O projeto foi criado como uma aplicação de portfólio profissional, com foco em regras de negócio reais, interface limpa e estrutura preparada para uma futura integração com backend ou API.
+O projeto foi desenvolvido com foco em regras de negócio, organização de dados, experiência de uso e estrutura frontend preparada para futura integração com backend e banco de dados.
 
-## Problema que resolve
+## Problema
 
-Pequenos negócios costumam perder oportunidades por falta de organização no relacionamento comercial: contatos ficam espalhados, negociações não têm etapa clara, follow-ups atrasam e os indicadores de venda não aparecem de forma simples.
+Pequenos negócios frequentemente perdem oportunidades porque contatos, negociações, tarefas e históricos ficam espalhados em ferramentas diferentes ou não são registrados de forma consistente.
 
-O Minerva CRM centraliza essas informações em um fluxo único para ajudar equipes comerciais a:
+O Minerva CRM propõe uma interface centralizada para organizar esse fluxo comercial e tornar o acompanhamento de clientes e oportunidades mais claro.
 
-- organizar clientes e contatos;
-- acompanhar leads por etapa do funil;
-- registrar interações comerciais;
-- lembrar tarefas de follow-up;
-- visualizar métricas básicas de vendas;
-- tomar decisões com dados simples.
+## Solução desenvolvida
+
+A aplicação reúne em um único ambiente:
+
+- cadastro e acompanhamento de clientes;
+- gestão de leads e oportunidades;
+- funil de vendas;
+- tarefas de follow-up;
+- histórico de interações;
+- métricas e relatórios comerciais.
 
 ## Funcionalidades
 
@@ -26,47 +30,20 @@ O Minerva CRM centraliza essas informações em um fluxo único para ajudar equi
 - Tarefas de follow-up com prioridade, status, vencimento e destaque de atrasadas.
 - Histórico de interações por tipo, responsável, próximo passo e relacionamento com cliente ou lead.
 - Relatórios com distribuição por etapa, origem, status de clientes e indicadores financeiros.
-- Persistência inicial em LocalStorage, sem necessidade de backend.
+- Persistência local com LocalStorage.
 
 ## Tecnologias
 
-- TypeScript
 - Next.js com App Router
 - React
+- TypeScript
 - Tailwind CSS
-- Componentes reutilizáveis
-- Dados mockados realistas
-- LocalStorage para persistência local
-
-## Como rodar
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Rode o ambiente de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-Acesse:
-
-```bash
-http://localhost:3000
-```
-
-Para gerar a build de produção:
-
-```bash
-npm run build
-```
+- LocalStorage
+- ESLint
 
 ## Estrutura
 
-```txt
+```text
 src/
   app/
     dashboard/
@@ -87,14 +64,66 @@ src/
   utils/
 ```
 
+## Como rodar
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Acesse:
+
+```text
+http://localhost:3000
+```
+
+Para gerar a build de produção:
+
+```bash
+npm run build
+```
+
+## Escopo atual
+
+Esta versão é intencionalmente frontend. Atualmente não possui:
+
+- backend próprio;
+- API;
+- banco de dados remoto;
+- autenticação;
+- gerenciamento real de usuários.
+
+Essas limitações fazem parte do escopo acadêmico atual e estão documentadas para não apresentar o projeto como um produto comercial completo.
+
+## Competências demonstradas
+
+- desenvolvimento frontend com React e Next.js;
+- TypeScript aplicado a aplicações web;
+- modelagem de entidades de negócio;
+- organização de estado e persistência local;
+- construção de dashboards e métricas;
+- componentização e reutilização de interface;
+- organização de arquitetura frontend;
+- desenvolvimento orientado a requisitos.
+
 ## Melhorias futuras
 
-- Autenticação de usuários.
-- Integração com banco de dados.
-- API própria com Node.js ou NestJS.
-- Integração com WhatsApp.
-- Envio de e-mails.
-- Permissões por usuário.
-- Dashboard avançado com gráficos reais.
-- Exportação de relatórios em PDF.
-- Integração com PDV.
+- autenticação de usuários;
+- integração com banco de dados;
+- API própria;
+- permissões por usuário;
+- integração com WhatsApp e e-mail;
+- dashboard avançado;
+- exportação de relatórios;
+- integração com outros sistemas.
+
+## Status
+
+Projeto acadêmico funcional em fase de refinamento para apresentação profissional em portfólio.
